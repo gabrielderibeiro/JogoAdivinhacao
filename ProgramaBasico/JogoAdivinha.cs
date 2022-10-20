@@ -69,7 +69,7 @@ class AppProChefe
                 }
                 else if (NumeroUsuario > 100 || NumeroUsuario < 1)
                 {
-                    Console.WriteLine($"lembrando que eu só vou pensar em um numero de 1 até 100 e vc tentou um valor inválido, perdeu essa tentativa");
+                    Console.WriteLine($"lembrando que eu só vou pensar em um numero de 1 até 100 e vc tentou um valor inválido, perdeu essa tentativa vacilão");
                     tentativas--;
                     continue;
                 }
@@ -107,6 +107,11 @@ class AppProChefe
                 jogarNovamente = false;
                 Console.Clear();
                 Console.WriteLine("Obrigado por jogar!!!");
+            }
+            else
+            {
+                dificuldadeCerta = false;
+                Console.Clear();
             }
         }
     }
